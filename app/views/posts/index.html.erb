@@ -1,0 +1,77 @@
+<header class="main-image" id="index">
+  <h1 class="main-title">Taichi Nishimura's Portfolio</h1>
+  <p class="sub-title">Web Engineer</p>
+</header>
+<div id="page_top"><a href="#"></a></div>
+<div class="nav">
+  <ul class="nav-bar">
+    <li><a href="#1">PLOFILE</a></li>
+    <li><a href="#2">SKILL</a></li>
+    <li><a href="#3">PORTFOLIO</a></li>
+    <li><a href="#4">CONTACT</a></li>
+  </ul>
+</div>
+<div class="plofiles" id="1">
+  <div class="plofile-image">
+    <div class="profile-picture"></div>
+    <ul class="profile-tag">
+      <li>名前：西村 太一</li>
+      <li>出身：東京都</li>
+      <li>学歴：専門学校 神田外語学院</li>
+      <li>職歴：株式会社エムアイフードスタイル<br>（勤務年数：12年）</li>
+    </ul>
+  </div>
+  <div class="plofile-main">
+    <h1 class="plofile-title">PLOFILE</h1>
+      <%= render partial: "profile_text" %>
+  </div>
+</div>
+<div class="skills" id="2">
+  <div class="skill-main">
+    <h1 class="skill-title">SKILL</h1>
+    <%= render partial: "skill_text" %>
+  </div>
+  <div class="skill-image"></div>
+</div>
+<div class="portfolios" id="3">
+  <h1 class="portforio-title">PORTFORIO</h1>
+  <div class="contents">
+    <div class="content-box">
+      <div class="content-img">
+        <%= link_to image_tag("kings-market-top.png"), "https://github.com/taichi0129/kings-market" %>
+      </div>
+      <div class="content-text">
+        <h3>スキルチェックシート</h3>
+        <p>元小売業でのトレーナー職の経験を活かし、スタッフのスキルチェック、及び進捗状況の確認・フィードバックできる管理アプリケーションを制作しました。</p>
+      </div>
+    </div>
+    <div class="content-box">
+      <div class="content-img">
+        <%= link_to image_tag("fleamarket.png"), "https://github.com/taichi0129/fleamarket_sample_75j" %>
+      </div>
+      <div class="content-text">
+        <h3>フリマアプリ</h3>
+        <p>プログラミングスクールのカリキュラムとして、チームにて４人のスクラムを組みアジャイル開発を行いました。工期は約３週間となります。</p>
+      </div>
+    </div>
+    <div class="content-box">
+      <div>
+        <%= link_to image_tag("chat-space.png"), "https://github.com/taichi0129/chat-space" %>
+      </div>
+      <div class="content-text">
+        <h3>チャットアプリケーション</h3>
+        <p>Webサービスの流れを理解すべく、データベースを一から考え、RailsやJavaScriptを使用し、GithubやAWSを用いて開発フロー・デプロイまでを学びました。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="contacts" id="4">
+  <h1 class="contact-title">CONTACT</h1>
+  <div class="comment"></div>
+  <ul class="contact">
+    <li><a class="far fa-envelope" href="mailto:nishi.made.t.9210@gmail.com"></a></li>
+    <li><a class="fab fa-twitter" href="https://twitter.com/taicchii_taichi"></a></li>
+    <li><a class="fab fa-facebook-f" href="https://www.facebook.com/taichi.nishimura.92"></a></li>
+  </ul>
+  <p>Copyright©Taichi Nishimura. All Rights Reserved.</p>
+</footer>
