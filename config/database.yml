@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: taichi_nishimura_production
-  username: taichi_nishimura
-  password: <%= ENV['TAICHI_NISHIMURA_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['DATABASE_USERNAME'] %>
+  username: <%= ENV['DATABASE_PASSWORD'] %>
+  password: <%= ENV['RAILS_MASTER_KEY'] %>
